@@ -4,8 +4,8 @@ namespace SharpAITest.DataAccessLibrary.Repositories.Abstractions;
 
 public interface IOrderRepository
 {
-    Task<OrderModel> InsertOrder(int Id);
-    Task<OrderModel> GetOrder(int Id);
-    Task<OrderModel> UpdateOrder(OrderModel product);
-    Task DeleteOrder(int Id);
+    Task<OrderModel> InsertOrder(OrderModel order);
+    Task<OrderModel> GetOrder(int id);
+    Task<OrderModel> UpdateOrder(OrderModel order);
+    Task DeleteOrder(int id);
 }

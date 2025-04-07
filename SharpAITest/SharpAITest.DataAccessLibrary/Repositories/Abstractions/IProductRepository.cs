@@ -4,8 +4,8 @@ namespace SharpAITest.DataAccessLibrary.Repositories.Abstractions;
 
 public interface IProductRepository
 {
-    Task<ProductModel> InsertProduct(int Id);
-    Task<ProductModel> GetProduct(int Id);
+    Task<ProductModel> InsertProduct(ProductModel product);
+    Task<ProductModel> GetProduct(int id);
     Task<ProductModel> UpdateProduct(ProductModel product);
-    Task DeleteProduct(int Id);
+    Task DeleteProduct(int id);
 }

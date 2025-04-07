@@ -1,27 +1,72 @@
-﻿using SharpAITest.DataAccessLibrary.Repositories.Abstractions;
+﻿using Dapper;
+using SharpAITest.DataAccessLibrary.DTOs;
+using SharpAITest.DataAccessLibrary.Mappings;
+using SharpAITest.DataAccessLibrary.Repositories.Abstractions;
+using SharpAITest.DataAccessLibrary.Services.Abstractions;
 using SharpAITest.Domain.Models;
+using System.Data;
 
 namespace SharpAITest.DataAccessLibrary.Repositories;
 
 public class OrderRepository : IOrderRepository
 {
-    public Task DeleteOrder(int Id)
+    private readonly IAppDbContext dbContext;
+
+    public OrderRepository(IAppDbContext dbContext)
     {
-        throw new NotImplementedException();
+        this.dbContext = dbContext;
     }
 
-    public Task<OrderModel> GetOrder(int Id)
+    public async Task<OrderModel> InsertOrder(OrderModel order)
     {
-        throw new NotImplementedException();
+        OrderModel output;
+        var connection = await dbContext.Connection;
+        var result = (await connection.QueryAsync<OrderDto>(
+            "dbo.spOrders_Insert",
+            new { order.FullPrice },
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure)).First();
+        output = result.ToModel();
+        return output;
     }
 
-    public Task<OrderModel> InsertOrder(int Id)
+    public async Task<OrderModel> GetOrder(int id)
     {
-        throw new NotImplementedException();
+        OrderModel output;
+        var connection = await dbContext.Connection;
+        var result = (await connection.QueryAsync<OrderDto>(
+            "dbo.spOrders_GetById",
+            new { Id = id },
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure)).FirstOrDefault();
+        output = result?.ToModel();
+        return output;
     }
 
-    public Task<OrderModel> UpdateOrder(OrderModel product)
+    public async Task<OrderModel> UpdateOrder(OrderModel order)
     {
-        throw new NotImplementedException();
+        OrderModel output;
+        var connection = await dbContext.Connection;
+        var result = (await connection.QueryAsync<OrderDto>(
+            "dbo.spOrders_Update",
+            new
+            {
+                order.Id,
+                order.FullPrice
+            },
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure)).First();
+        output = result.ToModel();
+        return output;
+    }
+
+    public async Task DeleteOrder(int id)
+    {
+        var connection = await dbContext.Connection;
+        var result = await connection.ExecuteAsync(
+            "dbo.spOrders_Delete",
+            new { Id = id, },
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure);
     }
 }
