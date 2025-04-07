@@ -63,11 +63,26 @@
     <Folder Include="dbo\StoredProcedures\Orders" />
     <Folder Include="dbo\StoredProcedures\Products" />
     <Folder Include="dbo\StoredProcedures\OrderProducts" />
+    <Folder Include="dbo\Types" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Orders.sql" />
     <Build Include="dbo\Tables\OrderProducts.sql" />
     <Build Include="dbo\Tables\Products.sql" />
+    <Build Include="dbo\StoredProcedures\Orders\spOrders_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Orders\spOrders_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\Orders\spOrders_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Orders\spOrders_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Products\spProducts_Insert.sql" />
+    <Build Include="dbo\StoredProcedures\Products\spProducts_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Products\spProducts_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Products\spProducts_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\OrderProducts\spOrderProducts_GetByOrderId.sql" />
+    <Build Include="dbo\StoredProcedures\OrderProducts\spOrderProducts_UpdateSet.sql" />
+    <Build Include="dbo\StoredProcedures\OrderProducts\spOrderProducts_InsertSet.sql" />
+    <Build Include="dbo\Types\CreateOrderProductUDT.sql" />
+    <Build Include="dbo\StoredProcedures\OrderProducts\spOrderProducts_DeleteOrderId.sql" />
+    <Build Include="dbo\Types\UpdateOrderProductUDT.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SharpAITest.MSSQL.refactorlog" />

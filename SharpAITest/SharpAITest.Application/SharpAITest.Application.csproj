@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SharpAITest.DataAccessLibrary\SharpAITest.DataAccessLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

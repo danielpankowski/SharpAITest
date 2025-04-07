@@ -25,6 +25,11 @@ public static class ToModelMappings
         };
     }
 
+    public static IEnumerable<OrderProductModel> ToModel(this IEnumerable<OrderProductDto> dtos)
+    {
+        return dtos.Select(dto => dto.ToModel());
+    }
+
     public static OrderModel ToModel(this OrderDto dto)
     {
         return new OrderModel

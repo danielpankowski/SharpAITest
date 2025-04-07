@@ -2,7 +2,7 @@
 	@TotalPrice MONEY
 AS
 BEGIN
-	INSERT INTO dbo.Orders
+	INSERT INTO dbo.Orders (TotalPrice)
 	OUTPUT [inserted].[Id], [inserted].[TotalPrice]
 	VALUES (@TotalPrice);
 END

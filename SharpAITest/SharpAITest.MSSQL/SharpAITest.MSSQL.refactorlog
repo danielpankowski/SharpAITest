@@ -7,4 +7,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="OrderId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="1560b95f-e5ea-4685-af15-7092df22de13" ChangeDateTime="04/07/2025 12:42:26">
+    <Property Name="ElementName" Value="[dbo].[OrderProductUDT]" />
+    <Property Name="ElementType" Value="SqlTableType" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="CreateOrderProductUDT" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e5a095c1-3b48-444a-8db9-0ba083232544" ChangeDateTime="04/07/2025 12:44:10">
+    <Property Name="ElementName" Value="[dbo].[spOrderProducts_Update]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spOrderProducts_UpdateSet]" />
+  </Operation>
 </Operations>
