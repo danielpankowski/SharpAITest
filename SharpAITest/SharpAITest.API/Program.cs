@@ -13,11 +13,7 @@ namespace SharpAITest.API
             builder.Services.AddOpenApi();
             builder.Services.AddLocalDependencies();
             var app = builder.Build();
-
-            if (app.Environment.IsDevelopment())
-            {
-                app.AddDevTools();
-            }
+            app.AddDevTools();
 
             app.UseHttpsRedirection();
 
