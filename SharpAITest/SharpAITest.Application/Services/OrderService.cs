@@ -51,17 +51,13 @@ public class OrderService : IOrderService
 
     public async Task<OrderModel> UpdateOrder(OrderModel updatedOrder)
     {
+        OrderModel output;
         await dbContext.BeginTransactionAsync();
         try
         {
-            OrderModel retrievedUpdatedOrder;
-            var currentOrder = await GetFullOrder(updatedOrder.Id);
-            await HandleProductChanges(currentOrder.OrderedProducts, updatedOrder.OrderedProducts, updatedOrder.Id);
-            if (Equals(updatedOrder, currentOrder) == false)
-            {
-                retrievedUpdatedOrder = await orderRepository.UpdateOrder(updatedOrder);
-            }
+            output = await HandleOrderUpdate(updatedOrder);
             await dbContext.CommitAsync();
+            return output;
         }
         catch
         {
@@ -69,6 +65,20 @@ public class OrderService : IOrderService
             throw;
         }
 
+    }
+
+    private async Task<OrderModel> HandleOrderUpdate(OrderModel updatedOrder)
+    {
+        OrderModel output;
+        var currentOrder = await GetFullOrder(updatedOrder.Id);
+
+        await HandleProductChanges(currentOrder.OrderedProducts, updatedOrder.OrderedProducts, updatedOrder.Id);
+        if (Equals(updatedOrder, currentOrder) == false)
+        {
+            await orderRepository.UpdateOrder(updatedOrder);
+        }
+        output = await GetFullOrder(updatedOrder.Id);
+        return output;
     }
 
     public async Task DeleteOrder(int Id)
@@ -82,40 +92,58 @@ public class OrderService : IOrderService
         await orderRepository.DeleteOrder(Id);
     }
 
-    private async Task<IEnumerable<OrderProductModel>> HandleProductChanges(IEnumerable<OrderProductModel> currentProducts, IEnumerable<OrderProductModel> updatedProducts, int orderId)
+    private async Task HandleProductChanges(IEnumerable<OrderProductModel> currentProducts, IEnumerable<OrderProductModel> updatedProducts, int orderId)
     {
-        List<OrderProductModel> output = new();
+        IEnumerable<OrderProductModel> output;
         var currentDict = currentProducts.ToDictionary(p => p.ProductId);
         var updatedDict = updatedProducts.ToDictionary(p => p.ProductId);
 
+        await HandleProductsDelete(currentDict, updatedDict);
+        await HandleProductsInsert(orderId, currentDict, updatedDict);
+        await HandleProductsUpdate(orderId, currentDict, updatedDict);
+    }
+
+    private async Task HandleProductsDelete(Dictionary<int, OrderProductModel> currentDict, Dictionary<int, OrderProductModel> updatedDict)
+    {
         var productsToRemove = currentDict.Keys.Except(updatedDict.Keys);
         foreach (var productId in productsToRemove)
         {
             await orderProductService.DeleteOrderProduct(productId);
         }
+    }
 
+    private async Task<IEnumerable<OrderProductModel>> HandleProductsInsert(int orderId, Dictionary<int, OrderProductModel> currentDict, Dictionary<int, OrderProductModel> updatedDict)
+    {
+        IEnumerable<OrderProductModel> output = Enumerable.Empty<OrderProductModel>();
         var productsToInsert = updatedDict.Keys.Except(currentDict.Keys).Select(key => updatedDict[key]);
         if (productsToInsert.Count() > 0)
         {
             await orderProductService.InsertProductSet(productsToInsert, orderId);
         }
-
-        var productsToUpdate = updatedDict.Keys.Intersect(currentDict.Keys)
-                                 .Select(k => new
-                                 {
-                                     Current = currentDict[k],
-                                     Updated = updatedDict[k]
-                                 })
-                                 .Where(p => HasProductChanged(p.Current, p.Updated))
-                                 .ToList();
-
-        var retrievedUpdatedProducts = await orderProductService.UpdateOrderProduct(orderId, products);
+        return output;
     }
 
-    private bool HasProductChanged(OrderProductModel currect, OrderProductModel updated)
+    private async Task HandleProductsUpdate(int orderId, Dictionary<int, OrderProductModel> currentDict, Dictionary<int, OrderProductModel> updatedDict)
     {
-        return currect.Quantity != updated.Quantity ||
-               currect.Product.Id != updated.Product.Id ||
-               currect.Product != updated.Product;
+        var updateCandidates = updatedDict.Keys.Intersect(currentDict.Keys)
+            .Select(k => new
+            {
+                Current = currentDict[k],
+                Updated = updatedDict[k]
+            });
+
+        var productsToUpdate = updateCandidates
+            .Where(p => HasProductQuantitiyChanged(p.Current, p.Updated))
+            .Select(p => p.Updated);
+
+        if (productsToUpdate.Count() > 0)
+        {
+            await orderProductService.UpdateProductSet(productsToUpdate, orderId);
+        }
+    }
+
+    private bool HasProductQuantitiyChanged(OrderProductModel currect, OrderProductModel updated)
+    {
+        return currect.Quantity != updated.Quantity;
     }
 }
