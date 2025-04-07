@@ -3,16 +3,60 @@
   "WorkspaceRootPath": "D:\\Repository\\SharpAITest\\SharpAITest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\mappings\\tomodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\mappings\\tomodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\dtos\\orderproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\dtos\\orderproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.domain\\models\\orderproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|solutionrelative:sharpaitest.domain\\models\\orderproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iorderproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\repositories\\abstractions\\iorderproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\services\\sqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\services\\sqldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.dataaccesslibrary\\services\\abstractions\\iappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06A6209-5613-446C-9F55-023CD28E108C}|SharpAITest.DataAccessLibrary\\SharpAITest.DataAccessLibrary.csproj|solutionrelative:sharpaitest.dataaccesslibrary\\services\\abstractions\\iappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.domain\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|solutionrelative:sharpaitest.domain\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.domain\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|solutionrelative:sharpaitest.domain\\models\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|d:\\repository\\sharpaitest\\sharpaitest\\sharpaitest.domain\\models\\orderproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}|SharpAITest.Domain\\SharpAITest.Domain.csproj|solutionrelative:sharpaitest.domain\\models\\orderproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +66,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 314,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:14:50.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Repositories\\OrderRepository.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:14:26.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToModelMappings.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Mappings\\ToModelMappings.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Mappings\\ToModelMappings.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Mappings\\ToModelMappings.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Mappings\\ToModelMappings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:10:02.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderProductDto.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\OrderProductDto.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\DTOs\\OrderProductDto.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\OrderProductDto.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\DTOs\\OrderProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:08:40.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\DTOs\\OrderDto.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\DTOs\\OrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:05:18.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\DTOs\\ProductDto.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:05:13.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IOrderProductRepository.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderProductRepository.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderProductRepository.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderProductRepository.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:59.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderRepository.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderRepository.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:51.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IProductRepository.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IProductRepository.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Repositories\\Abstractions\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:04:44.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SqlDbContext.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Services\\SqlDbContext.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Services\\SqlDbContext.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Services\\SqlDbContext.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Services\\SqlDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:01:38.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAppDbContext.cs",
+              "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Services\\Abstractions\\IAppDbContext.cs",
+              "RelativeDocumentMoniker": "SharpAITest.DataAccessLibrary\\Services\\Abstractions\\IAppDbContext.cs",
+              "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.DataAccessLibrary\\Services\\Abstractions\\IAppDbContext.cs",
+              "RelativeToolTip": "SharpAITest.DataAccessLibrary\\Services\\Abstractions\\IAppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T10:00:48.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OrderProductModel.cs",
               "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.Domain\\Models\\OrderProductModel.cs",
               "RelativeDocumentMoniker": "SharpAITest.Domain\\Models\\OrderProductModel.cs",
               "ToolTip": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.Domain\\Models\\OrderProductModel.cs",
               "RelativeToolTip": "SharpAITest.Domain\\Models\\OrderProductModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T09:50:06.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.Domain\\Models\\ProductModel.cs",
               "RelativeDocumentMoniker": "SharpAITest.Domain\\Models\\ProductModel.cs",
@@ -52,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "OrderModel.cs",
               "DocumentMoniker": "D:\\Repository\\SharpAITest\\SharpAITest\\SharpAITest.Domain\\Models\\OrderModel.cs",
               "RelativeDocumentMoniker": "SharpAITest.Domain\\Models\\OrderModel.cs",

@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SharpAITest.MSSQL", "SharpA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpAITest.Domain", "SharpAITest.Domain\SharpAITest.Domain.csproj", "{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpAITest.DataAccessLibrary", "SharpAITest.DataAccessLibrary\SharpAITest.DataAccessLibrary.csproj", "{B06A6209-5613-446C-9F55-023CD28E108C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0C4AA80-A5EA-41D5-8E6F-E6C25D2ED432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06A6209-5613-446C-9F55-023CD28E108C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06A6209-5613-446C-9F55-023CD28E108C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06A6209-5613-446C-9F55-023CD28E108C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06A6209-5613-446C-9F55-023CD28E108C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
