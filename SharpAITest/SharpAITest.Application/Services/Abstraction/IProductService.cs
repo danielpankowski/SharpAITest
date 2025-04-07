@@ -8,4 +8,5 @@ public interface IProductService
     Task<ProductModel> GetProduct(int id);
     Task<ProductModel> UpdateProduct(ProductModel product);
     Task DeleteProduct(int id);
+    Task<IEnumerable<ProductModel>> GetAllProducts();
 }

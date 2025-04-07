@@ -8,4 +8,5 @@ public interface IOrderRepository
     Task<OrderModel> GetOrder(int id);
     Task<OrderModel> UpdateOrder(OrderModel order);
     Task DeleteOrder(int id);
+    Task<IEnumerable<OrderModel>> GetAllOrders();
 }

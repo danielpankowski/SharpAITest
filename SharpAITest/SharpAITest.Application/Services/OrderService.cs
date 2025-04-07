@@ -42,10 +42,15 @@ public class OrderService : IOrderService
         }
     }
 
+    public Task<IEnumerable<OrderModel>> GetAllOrders()
+    {
+        return orderRepository.GetAllOrders();
+    }
+
     public async Task<OrderModel> GetFullOrder(int id)
     {
         OrderModel output = await orderRepository.GetOrder(id);
-        output.OrderedProducts = await orderProductService.GetAllProducts(id);
+        output.OrderedProducts = (await orderProductService.GetAllProducts(id));
         return output;
     }
 

@@ -8,7 +8,7 @@ using System.Data;
 
 namespace SharpAITest.DataAccessLibrary.Repositories;
 
-internal class ProductRepository : IProductRepository
+public class ProductRepository : IProductRepository
 {
     private readonly IAppDbContext dbContext;
 
@@ -34,6 +34,19 @@ internal class ProductRepository : IProductRepository
         return output;
     }
 
+    public async Task<IEnumerable<ProductModel>> GetAllProducts()
+    {
+        IEnumerable<ProductModel> output;
+        var connection = await dbContext.Connection;
+        var result = await connection.QueryAsync<ProductDto>(
+            "dbo.spProducts_GetAll",
+            null,
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure);
+        output = result.Select(x => x.ToModel());
+        return output;
+    }
+
     public async Task<ProductModel> GetProduct(int id)
     {
         ProductModel output;
@@ -43,7 +56,7 @@ internal class ProductRepository : IProductRepository
             new { Id = id },
             dbContext.Transaction,
             commandType: CommandType.StoredProcedure)).FirstOrDefault();
-        output = result.ToModel();
+        output = result?.ToModel();
         return output;
     }
 

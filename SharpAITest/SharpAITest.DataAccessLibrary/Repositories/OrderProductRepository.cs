@@ -23,12 +23,17 @@ public class OrderProductRepository : IOrderProductRepository
         var dtos = orderProduct.ToDto(orderId);
         var dataTable = dtos.ToCreateDataTable();
         var connection = await dbContext.Connection;
-        var result = await connection.QueryAsync<OrderProductDto>(
+        output = await connection.QueryAsync<OrderProductDto, ProductDto, OrderProductModel>(
             "dbo.spOrderProducts_InsertSet",
+            map: (orderProduct, product) =>
+            {
+                OrderProductModel result = orderProduct.ToModel();
+                result.Product = product.ToModel();
+                return result;
+            },
             new { OrderProducts = dataTable.AsTableValuedParameter("dbo.CreateOrderProductUDT") },
             dbContext.Transaction,
             commandType: System.Data.CommandType.StoredProcedure);
-        output = result.ToModel();
         return output;
     }
 
@@ -36,12 +41,17 @@ public class OrderProductRepository : IOrderProductRepository
     {
         IEnumerable<OrderProductModel> output;
         var connection = await dbContext.Connection;
-        var result = await connection.QueryAsync<OrderProductDto>(
+        output = await connection.QueryAsync<OrderProductDto, ProductDto, OrderProductModel>(
             "dbo.spOrderProducts_GetByOrderId",
+            (orderProduct, product) =>
+            {
+                OrderProductModel result = orderProduct.ToModel();
+               result.Product = product.ToModel();
+                return result;
+            },
             new { OrderId = orderId },
             dbContext.Transaction,
             commandType: System.Data.CommandType.StoredProcedure);
-        output = result?.ToModel();
         return output;
     }
 

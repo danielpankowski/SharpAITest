@@ -4,7 +4,7 @@ public class OrderModel
 {
     public int Id { get; set; }
     public IEnumerable<OrderProductModel> OrderedProducts { get; set; }
-    public decimal FullPrice { get; set; }
+    public decimal TotalPrice { get; set; }
 
     public bool Equals(OrderModel? other)
     {
@@ -12,6 +12,6 @@ public class OrderModel
             return false;
 
         return
-            FullPrice == other.FullPrice;
+            TotalPrice == other.TotalPrice;
     }
 }

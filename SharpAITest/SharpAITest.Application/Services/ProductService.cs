@@ -19,6 +19,11 @@ public class ProductService : IProductService
         return await productRepository.InsertProduct(product);
     }
 
+    public Task<IEnumerable<ProductModel>> GetAllProducts()
+    {
+        return productRepository.GetAllProducts();
+    }
+
     public async Task<ProductModel> GetProduct(int id)
     {
         ProductModel output;

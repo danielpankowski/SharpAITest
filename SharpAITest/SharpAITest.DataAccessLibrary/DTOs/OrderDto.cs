@@ -3,5 +3,5 @@
 public record OrderDto
 (
     int Id,
-    decimal FullPrice
+    decimal TotalPrice
 );

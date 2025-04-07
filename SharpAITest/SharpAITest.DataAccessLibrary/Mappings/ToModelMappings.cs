@@ -35,7 +35,7 @@ public static class ToModelMappings
         return new OrderModel
         {
             Id = dto.Id,
-            FullPrice = dto.FullPrice
+            TotalPrice = dto.TotalPrice
         };
     }
 }

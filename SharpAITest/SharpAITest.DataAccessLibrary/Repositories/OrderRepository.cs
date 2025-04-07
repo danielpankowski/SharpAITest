@@ -23,10 +23,23 @@ public class OrderRepository : IOrderRepository
         var connection = await dbContext.Connection;
         var result = (await connection.QueryAsync<OrderDto>(
             "dbo.spOrders_Insert",
-            new { order.FullPrice },
+            new { order.TotalPrice },
             dbContext.Transaction,
             commandType: CommandType.StoredProcedure)).First();
         output = result.ToModel();
+        return output;
+    }
+
+    public async Task<IEnumerable<OrderModel>> GetAllOrders()
+    {
+        IEnumerable<OrderModel> output;
+        var connection = await dbContext.Connection;
+        var result = await connection.QueryAsync<OrderDto>(
+            "dbo.spOrders_GetAll",
+            null,
+            dbContext.Transaction,
+            commandType: CommandType.StoredProcedure);
+        output = result.Select(x => x.ToModel());
         return output;
     }
 
@@ -52,7 +65,7 @@ public class OrderRepository : IOrderRepository
             new
             {
                 order.Id,
-                order.FullPrice
+                order.TotalPrice
             },
             dbContext.Transaction,
             commandType: CommandType.StoredProcedure)).First();
