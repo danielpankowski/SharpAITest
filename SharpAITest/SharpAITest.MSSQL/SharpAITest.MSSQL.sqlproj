@@ -59,6 +59,10 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="Profiles" />
+    <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="dbo\StoredProcedures\Orders" />
+    <Folder Include="dbo\StoredProcedures\Products" />
+    <Folder Include="dbo\StoredProcedures\OrderProducts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Orders.sql" />
