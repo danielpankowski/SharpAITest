@@ -19,11 +19,11 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Build API
-      working-directory: ./SharpAiTest.API 
+      working-directory: ./SharpAITest/SharpAITest.API 
       run: dotnet build --configuration Release
 
     - name: Publish
-      working-directory: ./SharpAiTest.API
+      working-directory: ./SharpAITest/SharpAITest.API
       run: dotnet publish -c Release -o ./publish
 
     - name: Deploy to Azure
@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.SHARP_AI_TEST_PUBLISH_PROFILE }}
-        package: ./SharpAiTest.API/publish
+        package: ./SharpAITest/SharpAITest.API/publish
