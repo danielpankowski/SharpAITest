@@ -50,6 +50,10 @@ public class OrderService : IOrderService
     public async Task<OrderModel> GetFullOrder(int id)
     {
         OrderModel output = await orderRepository.GetOrder(id);
+        if(output is null)
+        {
+            throw new NotFoundException($"Order with ID {id} not found");
+        }
         output.OrderedProducts = (await orderProductService.GetAllProducts(id));
         return output;
     }

@@ -86,7 +86,7 @@ public class OrdersController : ControllerBase
     }
 
     // PUT api/<OrdersController>/5
-    [HttpPut("{id}")]
+    [HttpPut()]
     public async Task<ActionResult<OrderResponse>> Put([FromBody] UpdateOrderRequest orderRequest)
     {
         try

@@ -14,4 +14,9 @@ public class OrderModel
         return
             TotalPrice == other.TotalPrice;
     }
+
+    public override bool Equals(object? obj)
+    {
+        return Equals(obj as OrderModel);
+    }
 }

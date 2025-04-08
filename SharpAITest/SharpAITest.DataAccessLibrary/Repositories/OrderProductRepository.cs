@@ -46,7 +46,7 @@ public class OrderProductRepository : IOrderProductRepository
             (orderProduct, product) =>
             {
                 OrderProductModel result = orderProduct.ToModel();
-               result.Product = product.ToModel();
+                result.Product = product.ToModel();
                 return result;
             },
             new { OrderId = orderId },
@@ -73,7 +73,7 @@ public class OrderProductRepository : IOrderProductRepository
         var connection = await dbContext.Connection;
         var result = await connection.QueryAsync<OrderProductDto>(
             "dbo.spOrderProducts_UpdateSet",
-            new { OrderProducts = dataTable.AsTableValuedParameter("dbo.UpdateOrderProductUDT") },
+            new { UpdateOrderProductUDT = dataTable.AsTableValuedParameter("dbo.UpdateOrderProductUDT") },
             dbContext.Transaction,
             commandType: System.Data.CommandType.StoredProcedure);
         output = result?.ToModel();
