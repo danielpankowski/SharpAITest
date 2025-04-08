@@ -13,17 +13,23 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: List files
+      run: |
+        echo "Repository structure:"
+        ls -lR
+        echo "---------------------"
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Build API
-      working-directory: ./SharpAITest/SharpAITest.API 
+      working-directory: SharpAITest/SharpAITest.API 
       run: dotnet build --configuration Release
 
     - name: Publish
-      working-directory: ./SharpAITest/SharpAITest.API
+      working-directory: SharpAITest/SharpAITest.API
       run: dotnet publish -c Release -o ./publish
 
     - name: Deploy to Azure
@@ -31,4 +37,4 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.SHARP_AI_TEST_PUBLISH_PROFILE }}
-        package: ./SharpAITest/SharpAITest.API/publish
+        package: SharpAITest/SharpAITest.API/publish
