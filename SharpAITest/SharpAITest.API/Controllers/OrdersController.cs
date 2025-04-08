@@ -38,7 +38,7 @@ public class OrdersController : ControllerBase
         catch (Exception ex)
         {
             logger.LogError(ex, ex.Message);
-            return StatusCode(500, "Internal server error");
+            return StatusCode(500, ex.Message);
         }
     }
 
