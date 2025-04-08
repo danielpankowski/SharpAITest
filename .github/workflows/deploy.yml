@@ -13,12 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: List files
-      run: |
-        echo "Repository structure:"
-        ls -lR
-        echo "---------------------"
-
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
